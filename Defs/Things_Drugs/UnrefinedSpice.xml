@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>UnrefinedSpice</defName>
+    <label>Unrefined Spice</label>
+    <description>A mysterious drug found only on Arrakis. It extends life, improves health, and raises the consciousness. This needs to be refined to make Melange.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Melange</texPath> <!-- Ensure this is a valid texture path for your item -->
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>70</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+<li>Manufactured</li>
+</thingCategories>
+  </ThingDef>
+</Defs>

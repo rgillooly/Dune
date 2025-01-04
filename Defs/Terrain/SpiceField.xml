@@ -1,0 +1,16 @@
+<Defs>
+  <TerrainDef>
+    <defName>Terrain_SpiceField</defName>
+    <label>Spice Field</label>
+    <description>The field where spices are found, with a unique terrain type.</description>
+    <texturePath>SpiceField</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <fertility>0.1</fertility>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+    </affordances>
+  </TerrainDef>
+</Defs>

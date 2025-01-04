@@ -1,0 +1,20 @@
+<Defs>
+<RecipeDef>
+<defName>HarvestSpice</defName>
+<label>Harvest Unrefined Spice</label>
+<description>Harvest Spice from the sands.</description>
+<jobString>Harvesting spice.</jobString>
+<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+<effectWorking>Cook</effectWorking>
+<soundWorking>Recipe_Machining</soundWorking>
+<workAmount>5000</workAmount>
+<products>
+<UnrefinedSpice>1</UnrefinedSpice>
+</products>
+<skillRequirements>
+<Crafting>8</Crafting>
+</skillRequirements>
+<workSkill>Crafting</workSkill>
+<displayPriority>0</displayPriority>
+</RecipeDef>
+</Defs>

@@ -1,0 +1,14 @@
+<Defs>
+  <ResearchProjectDef>
+    <defName>SpiceHarvesting</defName>
+    <label>spice harvesting</label>
+    <description>Unlocks the ability to build spice harvesters and begin extracting spice from spice fields. This is the first step towards creating melange.</description>
+    <baseCost>1200</baseCost> <!-- Adjusted for a moderate challenge -->
+    <researchViewX>9.50</researchViewX> <!-- Adjusted for placement -->
+    <researchViewY>3.00</researchViewY> <!-- Adjusted for placement -->
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li> <!-- Requires electricity to research -->
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

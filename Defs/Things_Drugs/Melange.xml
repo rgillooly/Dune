@@ -1,0 +1,133 @@
+<Defs>
+<ThingDef ParentName="MakeableDrugPillBase">
+<defName>Melange</defName>
+<label>Melange</label>
+<description>A drug with a micro-dose of mechanites for healing old scarred-over wounds or brain damage over time.</description>
+<descriptionHyperlinks>
+<HediffDef>MelangeHigh</HediffDef>
+</descriptionHyperlinks>
+<graphicData>
+<texPath>Melange</texPath>
+<graphicClass>Graphic_Multi</graphicClass>
+</graphicData>
+<socialPropernessMatters>false</socialPropernessMatters>
+<rotatable>false</rotatable>
+<statBases>
+<WorkToMake>1200</WorkToMake>
+<MarketValue>385</MarketValue>
+<Mass>0.01</Mass>
+</statBases>
+<costList>
+<UnrefinedSpice>2</UnrefinedSpice>
+</costList>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<drugCategory>Medical</drugCategory>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>MelangeHigh</hediffDef>
+<severity>1.0</severity>
+</li>
+</outcomeDoers>
+</ingestible>
+<tradeTags>
+<li>ExoticMisc</li>
+</tradeTags>
+<recipeMaker>
+<researchPrerequisite>SpiceHarvesting</researchPrerequisite>
+<recipeUsers>
+<li>SpiceRefinery</li>
+</recipeUsers>
+<skillRequirements>
+<Crafting>3</Crafting>
+<Intellectual>3</Intellectual>
+</skillRequirements>
+<displayPriority>1900</displayPriority>
+</recipeMaker>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>Melange</chemical>
+<addictiveness>1.00</addictiveness>
+<existingAddictionSeverityOffset>0.33</existingAddictionSeverityOffset>
+<!--  How many in percent the addiction progress after another drug dose. 0.33 means: 33%.  -->
+<needLevelOffset>0.9</needLevelOffset>
+<listOrder>1005</listOrder>
+</li>
+</comps>
+</ThingDef>
+<HediffDef>
+<defName>MelangeHigh</defName>
+<hediffClass>Hediff_High</hediffClass>
+<label>Melange</label>
+<description>Active micro-dose of Melange mechanites in the body. They will remove a permanent injury or a chronic condition ailment before thirty days.</description>
+<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+<scenarioCanAdd>true</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.033</severityPerDay>
+<!--  How many the drug effect fall per day out of 1. -0.033 means: drug effect stops after 30.3 days.  -->
+<showHoursToRecover>true</showHoursToRecover>
+</li>
+<li Class="HediffCompProperties_HealPermanentWounds"/>
+</comps>
+<stages>
+<li>
+<painFactor>0.9</painFactor>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>0.05</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+<!--  Melange addiction  -->
+<ChemicalDef>
+<defName>Melange</defName>
+<label>Melange</label>
+<addictionHediff>MelangeAddiction</addictionHediff>
+<canBinge>false</canBinge>
+<generateAddictionGenes>false</generateAddictionGenes>
+</ChemicalDef>
+<NeedDef ParentName="DrugAddictionNeedBase">
+<defName>Chemical_Melange</defName>
+<needClass>Need_Chemical</needClass>
+<label>Melange</label>
+<description>Because of a Melange addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+<listPriority>15</listPriority>
+<fallPerDay>0.032</fallPerDay>
+<!--  How many the need fall per day out of 1. 0.032 means: withdrawal after 31 days, auto drug consumption if possible after 28 days.  -->
+<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+</NeedDef>
+<HediffDef ParentName="AddictionBase">
+<defName>MelangeAddiction</defName>
+<label>Melange need</label>
+<description>Melange mechanites in the body. The micro-dosing coupled with glitter-tech will eliminate all trace of mechanites over time.\nDuring the withdrawal phase, the mechanite decoherence will causes mild reactions for several days.</description>
+<hediffClass>Hediff_Addiction</hediffClass>
+<causesNeed>Chemical_Melange</causesNeed>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.011</severityPerDay>
+<!--  How many the addiction fall per day out of 0.5. -0,011 means: initial addiction stops after 45.5 days.  -->
+<showDaysToRecover>true</showDaysToRecover>
+</li>
+</comps>
+<stages>
+<li> </li>
+<li>
+<label>withdrawal</label>
+<socialFightChanceFactor>2.0</socialFightChanceFactor>
+<painOffset>0.15</painOffset>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<setMax>0.9</setMax>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+</Defs>

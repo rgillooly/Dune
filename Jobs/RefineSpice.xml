@@ -1,0 +1,13 @@
+<Defs>
+  <JobDef>
+    <defName>RefineSpiceJob</defName>
+    <label>Refining spice...</label> <!-- Label shown to the pawn when performing the job -->
+    <description>Pawn is refining spice to create unrefined spice.</description>
+
+    <jobString>Refining...</jobString> <!-- Text shown during job execution -->
+    <jobSkill>Crafting</jobSkill> <!-- Crafting skill required -->
+    <targetA>Building_SpiceRefinery</targetA> <!-- Target is the Spice Refinery building -->
+    <targetB>SpiceUnrefined</targetB> <!-- Target output is unrefined spice -->
+    <workAmount>500</workAmount> <!-- Work needed to complete the job (in ticks) -->
+  </JobDef>
+</Defs>

@@ -1,0 +1,8 @@
+<Defs>
+  <WorldGenStep_BiomeChooser>
+    <biomes>
+      <li>Desert</li>  <!-- Other biomes, for example -->
+      <li>WormTerritory</li> <!-- Your custom Worm Territory biome -->
+    </biomes>
+  </WorldGenStep_BiomeChooser>
+</Defs>
