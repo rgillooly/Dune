@@ -2,7 +2,7 @@
 <BiomeDef>
 <defName>SpiceDesert</defName>
 <label>Spice Desert</label>
-<description>A desert where spice can be found</description>
+<description>A desert where spice can be found. Do not settle in the spice desert, or you will feel the worms rage.</description>
 <workerClass>BiomeWorker_SpiceField</workerClass> <!-- Ensure this class exists and is accessible -->
 <animalDensity>0.1</animalDensity>
 <plantDensity>0.01</plantDensity>
@@ -82,6 +82,7 @@
 <Rat>0.15</Rat>
 <Dromedary>0.15</Dromedary>
 <Fox_Fennec>0.04</Fox_Fennec>
+<Sandworm>0.75</Sandworm>
 </wildAnimals>
 <allowedPackAnimals>
 <li>Muffalo</li>

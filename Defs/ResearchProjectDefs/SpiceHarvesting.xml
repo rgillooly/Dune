@@ -4,11 +4,12 @@
     <label>spice harvesting</label>
     <description>Unlocks the ability to build spice harvesters and begin extracting spice from spice fields. This is the first step towards creating melange.</description>
     <baseCost>1200</baseCost> <!-- Adjusted for a moderate challenge -->
-    <researchViewX>9.50</researchViewX> <!-- Adjusted for placement -->
-    <researchViewY>3.00</researchViewY> <!-- Adjusted for placement -->
     <techLevel>Industrial</techLevel>
+  <researchViewX>0.50</researchViewX>
+  <researchViewY>2.70</researchViewY>
     <prerequisites>
       <li>Electricity</li> <!-- Requires electricity to research -->
     </prerequisites>
+    <tab>Dune</tab>
   </ResearchProjectDef>
 </Defs>

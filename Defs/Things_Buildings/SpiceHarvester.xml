@@ -29,7 +29,7 @@
 	  <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
       <Flammability>0.75</Flammability>
     </statBases>
-    <size>(4,4)</size>
+    <size>(1,2)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -61,6 +61,5 @@
     <researchPrerequisites>
       <li>SpiceHarvesting</li>
     </researchPrerequisites>
-    <terrainAffordanceNeeded>None</terrainAffordanceNeeded> <!-- This line makes it buildable on any terrain -->
   </ThingDef>
 </Defs>

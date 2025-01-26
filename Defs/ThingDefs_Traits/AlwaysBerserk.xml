@@ -1,0 +1,8 @@
+<Defs>
+<MentalBreakDef>
+  <defName>BerserkAlways</defName>
+  <label>always berserk</label>
+  <baseCommonality>1.0</baseCommonality> <!-- High commonality to make it frequent -->
+  <intensity>Extreme</intensity>
+</MentalBreakDef>
+</Defs>

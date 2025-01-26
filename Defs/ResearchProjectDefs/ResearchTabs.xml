@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>Dune</defName>
+    <label>dune</label>
+    <generalTitle>Dune</generalTitle>
+    <generalDescription> Items found in the series Dune.</generalDescription>
+    <visibleByDefault>true</visibleByDefault>
+    <tutorTag>Research-Tab-Dune</tutorTag>
+  </ResearchTabDef>
+</Defs>

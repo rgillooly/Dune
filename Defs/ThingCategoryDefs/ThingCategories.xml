@@ -1,0 +1,7 @@
+<Defs>
+    <ThingCategoryDef>
+    <defName>CorpsesSandworm</defName>
+    <label>sandworm corpses</label>
+      <parent>Corpses</parent>
+    </ThingCategoryDef>
+</Defs>

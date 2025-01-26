@@ -1,0 +1,7 @@
+<Defs>
+<JobDef>
+  <defName>HarvestSpice</defName>
+  <driverClass>Verse.AI.JobDriver</driverClass> <!-- Replace with the appropriate class -->
+  <reportString>harvesting spice.</reportString>
+</JobDef>
+</Defs>

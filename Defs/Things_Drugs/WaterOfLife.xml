@@ -1,0 +1,84 @@
+<Defs>
+<ThingDef ParentName="MakeableDrugPillBase">
+<defName>WaterOfLife</defName>
+<label>Water Of Life</label>
+<description>A drug wit miraculous spice properties.</description>
+<descriptionHyperlinks>
+<HediffDef>MelangeHigh</HediffDef>
+</descriptionHyperlinks>
+<graphicData>
+<texPath>WaterOfLife</texPath>
+<graphicClass>Graphic_Multi</graphicClass>
+</graphicData>
+<socialPropernessMatters>false</socialPropernessMatters>
+<rotatable>false</rotatable>
+<statBases>
+<WorkToMake>1200</WorkToMake>
+<MarketValue>385</MarketValue>
+<Mass>0.01</Mass>
+</statBases>
+<costList>
+<Corpse_Sandworm>2</Corpse_Sandworm>
+</costList>
+<techLevel>Industrial</techLevel>
+<ingestible>
+<drugCategory>Medical</drugCategory>
+<outcomeDoers>
+<li Class="IngestionOutcomeDoer_GiveHediff">
+<hediffDef>LifeWaterHigh</hediffDef>
+<severity>1.0</severity>
+</li>
+</outcomeDoers>
+</ingestible>
+<tradeTags>
+<li>ExoticMisc</li>
+</tradeTags>
+<comps>
+<li Class="CompProperties_Drug">
+<chemical>WaterOfLife</chemical>
+<addictiveness>1.00</addictiveness>
+<existingAddictionSeverityOffset>0.70</existingAddictionSeverityOffset>
+<!--  How many in percent the addiction progress after another drug dose. 0.33 means: 33%.  -->
+<needLevelOffset>0.9</needLevelOffset>
+<listOrder>1005</listOrder>
+</li>
+</comps>
+</ThingDef>
+<HediffDef>
+<defName>LifeWaterHigh</defName>
+<hediffClass>Hediff_High</hediffClass>
+<label>LifeWater</label>
+<description>Active dose of LifeWater in the body. It will remove a permanent injury or a chronic condition ailment before thirty days.</description>
+<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+<scenarioCanAdd>true</scenarioCanAdd>
+<maxSeverity>1.0</maxSeverity>
+<isBad>false</isBad>
+<comps>
+<li Class="HediffCompProperties_SeverityPerDay">
+<severityPerDay>-0.033</severityPerDay>
+<!--  How many the drug effect fall per day out of 1. -0.033 means: drug effect stops after 30.3 days.  -->
+<showHoursToRecover>true</showHoursToRecover>
+</li>
+<li Class="HediffCompProperties_HealPermanentWounds"/>
+</comps>
+<stages>
+<li>
+<painFactor>0.9</painFactor>
+<capMods>
+<li>
+<capacity>Consciousness</capacity>
+<offset>1</offset>
+</li>
+</capMods>
+</li>
+</stages>
+</HediffDef>
+<!--  LifeWater addiction  -->
+<ChemicalDef>
+<defName>WaterOfLife</defName>
+<label>WaterOfLife</label>
+<addictionHediff>MelangeAddiction</addictionHediff>
+<canBinge>false</canBinge>
+<generateAddictionGenes>false</generateAddictionGenes>
+</ChemicalDef>
+</Defs>

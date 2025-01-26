@@ -1,0 +1,16 @@
+<Defs>
+  <ResearchProjectDef>
+    <defName>AdvancedSpiceHarvesting</defName>
+    <label>advanced spice harvesting</label>
+    <description>Unlocks the ability to refine the Qater Of Life.</description>
+    <baseCost>2000</baseCost> <!-- Adjusted for a moderate challenge -->
+  <researchViewX>2.00</researchViewX>
+  <researchViewY>2.70</researchViewY>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li> <!-- Requires electricity to research -->
+      <li>SpiceHarvesting</li>
+    </prerequisites>
+    <tab>Dune</tab>
+  </ResearchProjectDef>
+</Defs>

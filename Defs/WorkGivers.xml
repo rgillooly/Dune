@@ -587,6 +587,23 @@
   </requiredCapacities>
   <prioritizeSustains>true</prioritizeSustains>
 </WorkGiverDef>
+
+<WorkGiverDef>
+  <defName>DoBillsSpiceRefineryWaterOfLife</defName>
+  <label>Refine Water of Life at Refinery</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>75</priorityInType>
+  <fixedBillGiverDefs>
+    <li>SpiceRefinery</li>
+  </fixedBillGiverDefs>
+  <verb>refine</verb>
+  <gerund>refining water of life</gerund>
+  <requiredCapacities>
+    <li>Manipulation</li>
+  </requiredCapacities>
+  <prioritizeSustains>true</prioritizeSustains>
+</WorkGiverDef>
   
   <!-- ============= Hunting ============= -->
   

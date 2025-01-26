@@ -29,7 +29,7 @@
 	  <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
       <Flammability>0.75</Flammability>
     </statBases>
-    <size>(4,4)</size>
+    <size>(2,2)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -39,6 +39,7 @@
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     <recipes>
 <li>RefineSpice</li>
+<li>RefineWaterOfLife</li>
 </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>

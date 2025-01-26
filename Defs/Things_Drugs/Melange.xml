@@ -2,7 +2,7 @@
 <ThingDef ParentName="MakeableDrugPillBase">
 <defName>Melange</defName>
 <label>Melange</label>
-<description>A drug with a micro-dose of mechanites for healing old scarred-over wounds or brain damage over time.</description>
+<description>Melange, the spice. A miraculous drug that heals wounds and extends life. Highly addictive.</description>
 <descriptionHyperlinks>
 <HediffDef>MelangeHigh</HediffDef>
 </descriptionHyperlinks>
@@ -59,7 +59,7 @@
 <defName>MelangeHigh</defName>
 <hediffClass>Hediff_High</hediffClass>
 <label>Melange</label>
-<description>Active micro-dose of Melange mechanites in the body. They will remove a permanent injury or a chronic condition ailment before thirty days.</description>
+<description>Active micro-dose of Melange in the body. It will remove a permanent injury or a chronic condition ailment before thirty days.</description>
 <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
 <scenarioCanAdd>true</scenarioCanAdd>
 <maxSeverity>1.0</maxSeverity>
@@ -105,7 +105,7 @@
 <HediffDef ParentName="AddictionBase">
 <defName>MelangeAddiction</defName>
 <label>Melange need</label>
-<description>Melange mechanites in the body. The micro-dosing coupled with glitter-tech will eliminate all trace of mechanites over time.\nDuring the withdrawal phase, the mechanite decoherence will causes mild reactions for several days.</description>
+<description>Melange in the body.</description>
 <hediffClass>Hediff_Addiction</hediffClass>
 <causesNeed>Chemical_Melange</causesNeed>
 <comps>

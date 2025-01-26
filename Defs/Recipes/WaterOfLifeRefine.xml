@@ -1,35 +1,38 @@
 <Defs>
 <RecipeDef>
-<defName>RefineSpice</defName>
-<label>Refine Melange</label>
-<description>Synthesise Melange.</description>
-<jobString>Synthesizing Melange.</jobString>
+<defName>RefineWaterOfLife</defName>
+<label>Refine The Water Of Life</label>
+<description>Synthesise Water Of Life.</description>
+<jobString>Synthesizing Water Of Life.</jobString>
 <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 <effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_Machining</soundWorking>
-<workAmount>50</workAmount>
+<workAmount>100</workAmount>
 <ingredients>
 <li>
 <filter>
 <thingDefs>
-<li>UnrefinedSpice</li>
+<li>Corpse_Sandworm</li>
 </thingDefs>
 </filter>
-<count>2</count>
+<count>1</count>
 </li>
 </ingredients>
 <fixedIngredientFilter>
 <thingDefs>
-<li>UnrefinedSpice</li>
+<li>Corpse_Sandworm</li>
 </thingDefs>
 </fixedIngredientFilter>
 <products>
-<Melange>1</Melange>
+<WaterOfLife>1</WaterOfLife>
 </products>
 <skillRequirements>
-<Crafting>3</Crafting>
+<Crafting>8</Crafting>
 </skillRequirements>
 <workSkill>Crafting</workSkill>
 <displayPriority>0</displayPriority>
+    <researchPrerequisites>
+      <li>AdvancedSpiceHarvesting</li>
+    </researchPrerequisites>
 </RecipeDef>
 </Defs>
